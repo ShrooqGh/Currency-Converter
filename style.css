@@ -161,6 +161,31 @@ body{
     cursor: pointer;
 }
 
+.chart-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto 1rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 20px 8px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #exchangeChart {
+    width: 100% !important;
+    height: 360px !important;
+    max-width: 650px;
+    background: #fafbfc;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    padding: 12px;
+    transition: background 0.3s;
+  }
+  
+
 body.dark-mode {
     background-color: #181a1b;
     color: #e3e3e3;
@@ -212,6 +237,16 @@ body.dark-mode #convert-btn {
     background-color: #232f5a;
     color: #fff;
 }
+
+  body.dark-mode .chart-container {
+    background: #23272f;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  }
+  
+  body.dark-mode #exchangeChart {
+    background: #23272f;
+  }
+
 
 @media screen and (max-width: 1000px){
     .converter-wrapper h2{
